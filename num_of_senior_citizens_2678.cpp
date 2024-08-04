@@ -5,7 +5,7 @@ using namespace std;
 int countSeniors(vector<string>& details) {
     int count=0;
         for(int i=0; i<details.size(); i++){
-            if(stoi(details[i].substr(11,2))>60){
+            if(((details[i][11]-'0')*10 + (details[i][12]-'0'))>60){
                 count++;
         }
     }
